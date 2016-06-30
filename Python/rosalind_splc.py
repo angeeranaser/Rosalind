@@ -45,6 +45,8 @@ def main():
 
     # break string into codons
     rnaString = [rnaString[i:i + 3] for i in range(0, len(rnaString), 3)]
+    
+    # translate rna into protein
     proteinString = ''
     for x in range(len(rnaString)):
         proteinLetter = refTable(rnaString[x])
